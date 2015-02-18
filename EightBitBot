@@ -1,0 +1,24 @@
+var loyaltybot = require('./../lib/initialize.js');
+
+loyaltybot.initialize({
+    // twitch info
+    twitch : {
+        channel     : 'dreightbit',
+        bot         : {name: 'eightbitbot', password: 'botsarecool'},
+        subscribers : 'https://docs.google.com/spreadsheets/d/16dIV_LnANyZYClGa6bAaOsmfLL78S9fAXYAXX0BDTmU/pubhtml'
+    },
+
+    // currency info
+    currency : {
+        name     : 'Rice',
+        payrate  : 5,
+        host     : '174.99.110.55',
+        user     : 'nc.res.rr.com',
+        password : '',
+        database : '',
+        website  : 'http://www.loyaltypoints.com'
+    },
+
+    // optional features
+    commands: true
+});
